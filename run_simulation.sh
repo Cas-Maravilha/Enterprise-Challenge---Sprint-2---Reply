@@ -10,12 +10,12 @@ mkdir -p analysis
 
 # Gerar dados simulados para todos os cenários
 echo "Gerando dados simulados para todos os cenários..."
-python3 scenario_simulator.py --scenario all --samples 100 --interval 1.0 --output-dir data --anomalies
+python3 src/scenario_simulator.py --scenario all --samples 100 --interval 1.0 --output-dir data --anomalies
 
 # Analisar os dados gerados
 echo
 echo "Analisando os dados simulados..."
-python3 data_analyzer.py --input data --output-dir analysis
+python3 src/data_analyzer.py --input data --output-dir analysis
 
 echo
 echo "Simulação concluída! Os resultados estão disponíveis em:"
