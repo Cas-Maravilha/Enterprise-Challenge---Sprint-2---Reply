@@ -43,7 +43,7 @@ Este projeto implementa uma simulação virtual de um circuito com ESP32 e diver
 ### Estrutura do Projeto
 ```
 .
-├── esp32_simulator.py    # Script principal de simulação
+├── src/esp32_simulator.py    # Script principal de simulação
 ├── data/                 # Diretório para armazenamento de dados
 │   └── ultima_leitura.json  # Última leitura dos sensores
 └── README.md            # Este arquivo
@@ -161,7 +161,7 @@ Movimento: Detectado
 
 2. **Executar Simulação**:
    ```bash
-   python esp32_simulator.py
+   python src/esp32_simulator.py
    ```
 
 3. **Monitorar Dados**:
